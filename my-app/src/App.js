@@ -1,13 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
-import EventFunctional from './components/EventFunctional';
+import EventsFunctional from './components/EventsFunctional';
 import EventsClass from './components/EventsClass';
 
 function App() {
   return (
     <div className="App">
-      <EventFunctional />
-      <EventClass />
+      <EventsFunctional />
+      <EventsClass />
     </div>
   );
 }
