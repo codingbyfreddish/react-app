@@ -1,3 +1,4 @@
+rfce
 // import React from 'react'
 
 // function ES7Snippets() {
@@ -8,7 +9,7 @@
 
 // export default ES7Snippets
 
-
+rafce
 // import React from 'react'
 
 // const ES7Snippets = () => {
@@ -19,7 +20,7 @@
 
 // export default ES7Snippets
 
-
+rce
 // import React, { Component } from 'react'
 
 // export class ES7Snippets extends Component {
@@ -32,7 +33,7 @@
 
 // export default ES7Snippets
 
-
+rconst
 // constructor(props) {
 //   super(props)
 
@@ -41,7 +42,8 @@
 //   }
 // }
 
-
+clg
 // console.log(first)
 
+clo
 // console.log('first', first)
