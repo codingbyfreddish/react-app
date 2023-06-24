@@ -1,13 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import EventsFunctional from './components/EventsFunctional';
-import EventsClass from './components/EventsClass';
+import EventBinding from './components/EventBinding';
 
 function App() {
   return (
     <div className="App">
-      <EventsFunctional />
-      <EventsClass />
+      <EventBinding />
     </div>
   );
 }
