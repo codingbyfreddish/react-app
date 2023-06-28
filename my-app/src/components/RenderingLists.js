@@ -1,4 +1,5 @@
 import React from 'react'
+import Book from './Book'
 
 function RenderingLists() {
     
@@ -8,7 +9,7 @@ function RenderingLists() {
         'the catcher in the rye'
     ]
 
-    const book = [
+    const books = [
         {
             title: 'to kill a mocking bird',
             author: 'lee harper',
@@ -31,8 +32,9 @@ function RenderingLists() {
         {bookList.map(book => {
             return <h2>{book}</h2>
         })}
+        {/* <hr />
         {
-            book.map(book => {
+            books.map(book => {
                 return(
                    <div>
                     <h5>{book.title}</h5>
@@ -41,6 +43,12 @@ function RenderingLists() {
                 </div> 
             )
             })   
+        } */}
+        <hr />
+        {
+            books.map(book => {
+                return <Book book={book} />
+            })
         }
     </div>
   )
