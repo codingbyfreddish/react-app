@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import { LifeCyclesCWU } from './components/LifeCyclesCWU';
+import ControlledForms from './components/ControlledForms';
 
 function App() {
   return (
     <div className="App">
-      <LifeCyclesCWU />
+      <ControlledForms/>
     </div>
   );
 }
