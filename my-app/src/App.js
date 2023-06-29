@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import ControlledForms from './components/ControlledForms';
+import UncontrolledForms from './components/UncontrolledForms';
 
 function App() {
   return (
     <div className="App">
-      <ControlledForms/>
+      <UncontrolledForms/>
     </div>
   );
 }
