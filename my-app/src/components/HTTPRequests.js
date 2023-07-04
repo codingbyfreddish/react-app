@@ -6,7 +6,8 @@ export class HTTPRequests extends Component {
       super(props)
     
       this.state = {
-         posts: []
+         posts: [],
+         error: null
       }
     }
     componentDidMount() {
@@ -14,7 +15,14 @@ export class HTTPRequests extends Component {
       .then(response => {
         console.log(response);
         this.setState({
-          posts: response.data
+          posts: Array.isArray(response.data)
+          ? response.data
+          : [response.data]
+        })
+      })
+      .catch(error => {
+        this.setState({
+          error: error.message
         })
       })
     }
@@ -34,7 +42,9 @@ export class HTTPRequests extends Component {
                     </div>
                   ))
               ) : (
-                  <h4>Loading posts ...</h4>)
+                this.state.error
+                ? <p>{this.state.error}</p>
+                : <h4>Loading posts ...</h4>)
             }
       </div>
     )
